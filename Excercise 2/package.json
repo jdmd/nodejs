@@ -1,0 +1,13 @@
+{
+	"name": "HelloWorldWeb",
+	"description": "Hello World Web Example",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"opn": "latest",
+		"express": "^4.12.0"
+	},
+	"engines": {
+		"node": ">=0.10.x"
+	}
+}
