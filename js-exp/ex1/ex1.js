@@ -1,5 +1,6 @@
 var http = require('http');
 var fs = require('fs');
+var opn = require('opn');
 var port = process.env.PORT || 3000;
 
 http.createServer(function(req,res) {
@@ -10,6 +11,7 @@ http.createServer(function(req,res) {
 		res.write(content);
 		res.end();
 	});
-}).listen(port);
-
-console.log("Server running at http://localhost:"+port);
+}).listen(port, function() {
+	console.log("Server running at http://localhost:"+port);
+	opn('http://localhost:'+port);
+});
