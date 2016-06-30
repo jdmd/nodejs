@@ -3,8 +3,8 @@ var fs = require('fs');
 var opn = require('opn');
 var port = process.env.PORT || 3000;
 
-server = http.createServer(function(req,res) {
-	res.setHeader('Content-Type', 'text/html');
+var server = http.createServer(function(req,res) {
+	res.setHeader('Content-Type', 'text/html;charset=utf-8');
 	res.writeHeader(200);
 	res.write('Hello from jdmd!');
 	fs.readFile('index.html', 'utf8', function(err, content) {
