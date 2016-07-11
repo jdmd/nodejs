@@ -1,0 +1,10 @@
+{
+  "name": "chatter",
+  "version": "0.0.1",
+  "description": "twitter parody",
+  "author": "jdmd",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
